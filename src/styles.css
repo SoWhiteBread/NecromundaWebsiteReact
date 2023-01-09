@@ -1,5 +1,6 @@
 html {
   background: #26262e;
+  font-family: Cinzel;
 }
 
 .header {
@@ -36,7 +37,6 @@ html {
 }
 
 .explore {
-  font-family: Source Sans Pro;
   font-style: normal;
   font-weight: bold;
   font-size: 22px;
@@ -47,72 +47,25 @@ html {
 }
 
 .myProjects {
-  font-family: Source Sans Pro;
   font-style: normal;
   font-weight: 600;
   font-size: 22px;
   line-height: 31px;
   letter-spacing: 1.5px;
-  color: #b0b3b5;
+  color: #eff3f5;
   display: flex;
 }
 
 .menu {
   display: flex;
   flex-direction: row;
-  gap: 14px;
-  justify-content: center;
+  gap: 25px;
+  justify-content: space-between;
   align-items: center;
-  width: 33%;
   margin-left: auto;
   margin-right: auto;
 }
 
-
-
-.splashTextWrapper {
-  margin-top: auto;
-  margin-left: auto;
-  margin-right: auto;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  gap: 18px;
-  text-align: center;
-}
-
-.splashH1 {
-  font-family: Source Sans Pro;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 40px;
-  line-height: 50px;
-  color: #eff3f5;
-  display: flex;
-}
-
-.splashH2 {
-  font-family: Source Sans Pro;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 24px;
-  line-height: 30px;
-  display: flex;
-  color: #eff3f5;
-}
-
-.credit {
-  font-family: Source Sans Pro;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 10px;
-  line-height: 13px;
-  display: flex;
-  align-self: flex-end;
-  letter-spacing: 1.5px;
-  color: #ffffff;
-  margin-top: auto;
-}
 
 .dashboard {
   padding-left: 10px;
@@ -134,7 +87,6 @@ html {
 }
 
 .projectSearch {
-  font-family: Roboto;
   font-style: normal;
   font-weight: bold;
   font-size: 12px;
@@ -154,7 +106,6 @@ html {
 }
 
 .resultsBar {
-  font-family: Roboto;
   font-style: normal;
   font-weight: bold;
   font-size: 12px;
@@ -198,7 +149,6 @@ html {
   height: 48px;
 }
 .pokeName {
-  font-family: Source Sans Pro;
   font-style: normal;
   font-weight: 600;
   font-size: 14px;
@@ -209,7 +159,6 @@ html {
   color: #b0b3b5;
 }
 .pokeSpecies {
-  font-family: Roboto;
   font-style: normal;
   font-weight: normal;
   font-size: 12px;
@@ -223,7 +172,6 @@ html {
   flex-direction: column;
 }
 .pokeGameName {
-  font-family: Source Sans Pro;
   font-style: normal;
   font-weight: 600;
   font-size: 20px;
@@ -241,7 +189,6 @@ html {
   padding-bottom: 16px;
 }
 .pokeTypeTag {
-  font-family: Roboto;
   font-style: normal;
   font-weight: bold;
   font-size: 13px;
@@ -262,7 +209,6 @@ html {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  font-family: Roboto;
   font-style: normal;
   font-weight: normal;
   font-size: 13px;
@@ -278,7 +224,6 @@ html {
   justify-content: center;
   gap: 27px;
   padding: 27px;
-  font-family: Cinzel;
   font-style: normal;
 }
 
