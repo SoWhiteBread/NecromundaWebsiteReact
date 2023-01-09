@@ -1,0 +1,324 @@
+html {
+  background: #26262e;
+}
+
+.header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 88px;
+  padding-left: 27px;
+  padding-right: 27px;
+}
+
+.profile {
+  border: 1px solid #8fa9d5;
+  box-shadow: 1px 1px 0px #141517;
+  border-radius: 3px;
+}
+
+.profile,
+.logo {
+  display: flex;
+  max-height: 100%;
+  width: auto;
+}
+
+.wrapperLeft {
+  width: 33%;
+  display: flex;
+  justify-content: flex-start;
+}
+.wrapperRight {
+  width: 33%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.explore {
+  font-family: Source Sans Pro;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 22px;
+  line-height: 31px;
+  letter-spacing: 1.5px;
+  color: #eff3f5;
+  display: flex;
+}
+
+.myProjects {
+  font-family: Source Sans Pro;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 31px;
+  letter-spacing: 1.5px;
+  color: #b0b3b5;
+  display: flex;
+}
+
+.menu {
+  display: flex;
+  flex-direction: row;
+  gap: 14px;
+  justify-content: center;
+  align-items: center;
+  width: 33%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.splash {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: stretch;
+  position: relative;
+  background: url("unsplash1.png") center/cover no-repeat;
+  height: 300px;
+  z-index: -1;
+  margin-bottom: -26px;
+}
+
+.splashTextWrapper {
+  margin-top: auto;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 18px;
+  text-align: center;
+}
+
+.splashH1 {
+  font-family: Source Sans Pro;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 50px;
+  color: #eff3f5;
+  display: flex;
+}
+
+.splashH2 {
+  font-family: Source Sans Pro;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 30px;
+  display: flex;
+  color: #eff3f5;
+}
+
+.credit {
+  font-family: Source Sans Pro;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 10px;
+  line-height: 13px;
+  display: flex;
+  align-self: flex-end;
+  letter-spacing: 1.5px;
+  color: #ffffff;
+  margin-top: auto;
+}
+
+.dashboard {
+  padding-left: 10px;
+  padding-right: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.searchBar {
+  background: #202123;
+  border: 2px solid #363a42;
+  border-radius: 3px;
+  width: 66%;
+  height: 52px;
+  display: flex;
+  flex-direction: row;
+  padding-left: 12px;
+  align-self: center;
+}
+
+.projectSearch {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 14px;
+  display: flex;
+  align-items: center;
+  color: #eff3f5;
+  width: 100%;
+  background: #202123;
+  border: none;
+}
+
+.searchIcon {
+  width: 16px;
+  height: 16px;
+  align-self: center;
+}
+
+.resultsBar {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 14px;
+  display: flex;
+  align-items: center;
+  color: #b0b3b5;
+  padding: 10px;
+}
+
+.cardContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 34px;
+  border-top: 3px solid #8d8d8e;
+  padding-top: 37px;
+}
+.card {
+  display: flex;
+  flex-direction: column;
+  width: 425px;
+  height: 230px;
+  filter: drop-shadow(3px 3px 2px rgba(20, 21, 23, 0.35));
+  background: #2e2e38;
+  border-radius: 3px;
+  padding: 24px;
+  border-top: 6px solid #b0b3b5;
+}
+.cardTopThird {
+  display: flex;
+}
+.pokeHeader {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+.pokeSprite {
+  width: 48px;
+  height: 48px;
+}
+.pokeName {
+  font-family: Source Sans Pro;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 18px;
+  display: flex;
+  align-items: center;
+  letter-spacing: 1.5px;
+  color: #b0b3b5;
+}
+.pokeSpecies {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 14px;
+  display: flex;
+  align-items: center;
+  color: #b0b3b5;
+}
+.cardMiddleThird {
+  display: flex;
+  flex-direction: column;
+}
+.pokeGameName {
+  font-family: Source Sans Pro;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 25px;
+  display: flex;
+  align-items: center;
+  color: #eff3f5;
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+.pokeTagContainer {
+  display: flex;
+  flex-direction: row;
+  gap: 14px;
+  padding-bottom: 16px;
+}
+.pokeTypeTag {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 13px;
+  line-height: 15px;
+  display: flex;
+  align-items: center;
+  align-content: center;
+  color: #eff3f5;
+  background: #5078bf;
+  border: 1px solid #eff3f5;
+  border-radius: 3px;
+  padding: 7px 7px 5px 7px;
+}
+.cardBottomThird {
+  height: 100%;
+  border-top: 1px solid #242629;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 15px;
+  color: #b0b3b5;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  gap: 27px;
+  padding: 27px;
+  font-family: Cinzel;
+  font-style: normal;
+}
+
+.terms,
+.contact {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 20px;
+  color: #8d8d8e;
+}
+
+.copyright {
+  margin-left: auto;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 14px;
+  color: #4a4a4a;
+}
+
+@media only screen and (max-width: 768px) {
+  .menu,
+  .wrapperRight,
+  .credit,
+  .copyright,
+  .contact,
+  #insta,
+  #twitter {
+    display: none;
+  }
+  .splashTextWrapper {
+    margin-top: 0px;
+  }
+}
