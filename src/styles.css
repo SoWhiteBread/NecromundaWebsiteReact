@@ -68,17 +68,7 @@ html {
   margin-right: auto;
 }
 
-.splash {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: stretch;
-  position: relative;
-  background: url("unsplash1.png") center/cover no-repeat;
-  height: 300px;
-  z-index: -1;
-  margin-bottom: -26px;
-}
+
 
 .splashTextWrapper {
   margin-top: auto;
