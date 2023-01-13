@@ -1,12 +1,12 @@
 import { StrictMode } from "react";
 import ReactDOM from "react-dom";
 import { Provider } from "react-redux";
-import store from "./App/store.js";
-import { fetchPokemon } from "./App/actions.js";
+import store from "./App/store1";
+import { fetchCampaignInfo } from "./App/actions1";
 
 import App from "./App";
 
-store.dispatch(fetchPokemon());
+store.dispatch(fetchCampaignInfo());
 
 const rootElement = document.getElementById("root");
 ReactDOM.render(
