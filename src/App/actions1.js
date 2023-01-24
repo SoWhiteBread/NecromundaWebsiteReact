@@ -15,22 +15,11 @@ export const fetchCampaignInfo = () => {
     fetch(url + "campaign/7842.json")
       .then((response) => response.json())
       .then((response) => dispatch(fetchCampaignSuccess(response.campaign)))
-      .then((response) => {
-        response.campaign.gangs.forEach((gang) => {
-          let gangUrl = `https://corsproxy.io/?https://yaktribe.games/underhive/json/gang/${gang.id}.json`;
-          fetch(gangUrl)
-          .then((response) => response.json())
-          .then((gangData) => dispatch(fetchGangSuccess(gangData)))
-        })
-      })
 };
 
-/*(response) => {
-  dispatch(fetchCampaignSuccess(response.campaign)
-  response.campaign.gangs.forEach(gang) => {
-    let gangUrl = "https://corsproxy.io/?https://yaktribe.games/underhive/json/gang/" + gang.id + ".json";
-    fetch(gangUrl)
+export const fetchGangInfo = (gangID) => {
+  return async (dispatch) => 
+  fetch(url + `gang/${gangID}.json`)
     .then((response) => response.json())
     .then((gangData) => dispatch(fetchGangSuccess(gangData)))
-  })
-}*/
+}
