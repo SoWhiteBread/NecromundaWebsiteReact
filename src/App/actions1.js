@@ -8,18 +8,21 @@ const fetchGangSuccess = (gang) => ({
     payload: { gang }
 })
 
-let url = "https://corsproxy.io/?https://yaktribe.games/underhive/json/"
-
 export const fetchCampaignInfo = () => {
-  return async (dispatch) =>
-    fetch(url + "campaign/7842.json")
-      .then((response) => response.json())
-      .then((response) => dispatch(fetchCampaignSuccess(response.campaign)))
-};
-
-export const fetchGangInfo = (gangID) => {
-  return async (dispatch) => 
-  fetch(url + `gang/${gangID}.json`)
-    .then((response) => response.json())
-    .then((gangData) => dispatch(fetchGangSuccess(gangData)))
+  return async (dispatch) => {
+    try {
+        const response = await fetch(`https://corsproxy.io/?https://yaktribe.games/underhive/json/campaign/7842.json`);
+        const campaignData = await response.json();
+        dispatch(fetchCampaignSuccess(campaignData.campaign));
+        campaignData.campaign.gangs.forEach((item) => {
+          fetch(`https://corsproxy.io/?https://yaktribe.games/underhive/json/gang/${item.gang_id}.json`)
+          .then((response) => response.json())
+          .then((gangData) => dispatch(fetchGangSuccess(gangData)))
+          .catch((error) => console.error(error))
+        } 
+        )
+    } catch (error) {
+        console.error(error);
+    }
+  }
 }
